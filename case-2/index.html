@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        body {
+            width: 650px;
+            margin: 0 auto;
+        }
+        a{
+            color: black;
+        }
+        a:link:visited:hover:active{
+            color: black;
+            
+        }
+
+        img {
+            background: none;
+        }
+
+        table:not(.dates, .smIcons) {
+            table-layout: fixed;
+            border-collapse: collapse;
+            width: 100%;
+
+        }
+
+        .dates {
+            border: 4px solid #c5c5c5;
+            border-radius: 20px;
+            table-layout: fixed;
+            width: 82%;
+            margin: 2rem auto;
+            padding: 2rem 3rem 2rem 3rem;
+        }
+
+        .button {
+            background-color: #C90C0F;
+            border-radius: 8px;
+            border-style: none;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            font-size: 22px;
+            font-weight: 700;
+            height: 55px;
+            line-height: 20px;
+            margin: 0 auto;
+            outline: none;
+            padding: 2px 55px;
+            text-align: center;
+
+        }
+
+        .flights td {
+            padding: 0.5rem;
+        }
+
+        .ignore-css {
+            all: unset;
+            width: 15px;
+            height: 15px;
+            border: 1px black solid !important;
+            border-radius: 50% !important;
+            padding: 18px;
+            font-weight: 700;
+            align-items: center;
+            text-align: center;
+            border-collapse: separate;
+            border-spacing: 5px;
+            margin: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- TOP BAR -->
+    <table style="background-color: #b4c2bb; height: 2.5rem;">
+        <tbody>
+            <tr>
+                <td style="padding: 30px;"><a href="#"><img src="./images/ta-logo.png" alt=""></a></td>
+                <td style="text-align: right; padding-right: 30px"><img src="./images/ta-tag.png" alt=""></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- NAV PIC -->
+    <table>
+        <tbody>
+            <tr>
+                <td><img src="./images/woman-camera.png" alt=""></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- NAV TEXT-->
+    <table style="text-align: center;">
+        <tbody>
+            <tr>
+                <td style="padding: 3rem;"><img src="./images/nav-text.png" alt=""></td>
+
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td><img src="./images/png-text.png" alt=""></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- DATES -->
+    <table class="dates">
+        <tbody>
+            <tr>
+                <td style="width: 12%;"><img src="./images/tickets.png" alt=""></td>
+                <td style="width: 9%;"><img src="./images/stick.png" alt=""></td>
+                <td style="width: 79%"><img src="./images/ticket-text.png" alt=""></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td style="width: 12%;"><img src="./images/suitcase.png" alt=""></td>
+                <td style="width: 9%;"><img src="./images/stick.png" alt=""></td>
+                <td style="width: 79%"><img src="./images/suit-text.png" alt=""></td>
+            </tr>
+        </tbody>
+    </table>
+    <table style="text-align:center; margin-bottom: 3rem;">
+        <tbody>
+            <tr>
+                <td><button class="button">BUY NOW</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- CONTEXT 2x1 -->
+    <table style="text-align: center;">
+        <tbody class="flights">
+            <tr>
+                <td><img src="./images/marseille.png" alt=""></td>
+                <td><img src="./images/Washington.png" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="./images/airplane.png" alt=""></td>
+                <td><img src="./images/airplane.png" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="./images/horiz-stick.png" alt=""></td>
+                <td><img src="./images/horiz-stick.png" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="./images/xxx.png" alt=""></td>
+                <td><img src="./images/xxx.png" alt=""></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- CONTEXT 1X1 -->
+    <table style="text-align: center;">
+        <tbody class="flights">
+            <tr>
+                <td><img src="./images/Istanbul.png" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="./images/airplane.png" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="./images/horiz-stick.png" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="./images/xxx.png" alt=""></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <!-- LAST ITEMS -->
+
+    <hr style="margin-top:4rem;border:1px solid #E0E0E1;">
+
+    <table style="margin-top:4rem;">
+        <tbody>
+            <tr>
+                <td><img src="./images/lastitem1.png" alt=""></td>
+                <td><img src="./images/lastitem1-text.png" alt=""><br><img src="./images/long-line.png" alt=""><br><a
+                        href="#"><img class="explorer" src="./images/explore.png" alt=""></a></td>
+            </tr>
+            <tr style="text-align:right;">
+                <td><img src="./images/lastitem2-text.png" alt=""><br><img src="./images/long-line.png" alt=""><br><a
+                        href="#"><img class="explorer" src="./images/explore.png" alt=""></a></td>
+                <td><img src="./images/lastitem2.png" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="./images/lastitem3.png" alt=""></td>
+                <td><img src="./images/lastitem3-text.png" alt=""><br><img src="./images/long-line.png" alt=""><br><a
+                        href="#"><img class="explorer" src="./images/explore.png" alt=""></a></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- ICONS FOOTER -->
+    <table style="margin: 4rem auto; text-align: center;">
+        <tbody>
+            <tr>
+                <td><img src="./images/icons-footer.png" alt=""></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- FOOTER1 -->
+    <table class="footer" style="background: url(./images/footer-bg.png); text-align: center; align-items: center;">
+        <tbody>
+            <tr>
+                <td style="padding: 2rem;"><img src="./images/ta-logo.png" alt=""></td>
+            </tr>
+            <tr>
+                <td style="padding: 1rem 3rem 5rem 3rem">
+                    <a style="text-decoration: none;" href="#"><h3>www.turkishairlines.com</h3></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="ignore-css"><a style="text-decoration: none;" href="#"><span>IG</span></td></a>
+                <td class="ignore-css"><a style="text-decoration: none;" href="#"><span>FB</span></td></a>
+                <td class="ignore-css"><a style="text-decoration: none;" href="#"><span>TW</span></td></a>
+                <td class="ignore-css"><a style="text-decoration: none;" href="#"><span>YT</span></td></a>
+            </tr>
+        </tbody>
+    </table>
+    <!-- FOOTER2 -->
+    <table style="background: url(./images/footer-bg.png); text-align: center; align-items: center;">
+        <tbody>
+            <tr>
+                <td>
+                    <hr style="margin-top:4rem; margin-bottom:4rem; border:1px solid gray; width:100%;">
+                </td>
+            </tr>
+            <tr style="width: 100%;">
+                <td style="width: 50%;float:right"><a href="#"><img style="height:40px; width: 120px;"
+                        src="./images/download-on-the-app-store.svg" alt=""></a></td>
+                <td style="width: 50%;float:left"><a href="#"><img style="height:40px; width: 120px;"
+                        src="./images/Google_Play_Store_badge_EN.svg" alt=""></a></td>
+
+            </tr>
+            <tr>
+                <td style="text-align: center; align-items: center; font-size: 13px;"></small>
+                    <p>Our mobile application is, available in: Turkish, English, German, Spanish, Italian, French and
+                        Russian.</p><small>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <hr style="margin-top:4rem; margin-bottom:4rem; border:1px solid gray; width:100%;">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        <tbody style="text-align: center; align-items: center; font-weight: 700;">
+            <tr>
+                <td>
+                    <p>
+                        TÜRK HAVA YOLLARI A.O. <br>
+                        Türk Hava Yolları A.O. Genel Müdürlük Binası, Atatürk Havalimanı <br>
+                        34149 Yeşilköy/İstanbul Tel: 0850 333 0 849 <br>
+                        Mersis No: 08760004746400017 <br>
+                    </p>
+                </td>
+                
+            </tr>
+            <tr >
+                <td style="padding: 1rem;"><p>  Don’t want to receive this type of email? <a href="#">Unsubscribe.</a> </p> </td>
+            </tr>
+        </tbody>
+        </tbody>
+    </table>
+
+
+
+
+</body>
+
+</html>
