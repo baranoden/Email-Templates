@@ -14,6 +14,14 @@
       font-family: Arial, Helvetica, sans-serif;
 
     }
+    a{
+      text-decoration: none;
+            color: black;
+        }
+        a:link:visited:hover:active{
+            color: black;
+            
+        }
 
     body {
       width: 650px;
@@ -31,13 +39,25 @@
       width: 100%;
 
     }
+    
    .hiddensh {
-overflow: hidden;
+    overflow: hidden;
 }
-    /* tbody {
-      width: 100%;
-      height: 100%;
-    } */
+
+    .mostLiked td:not(.stick){
+      
+      width: 100% !important;
+    }
+
+    .mostLiked td h3{
+      font-weight: 400;
+    }
+    .radar td{
+      width: 100% !important;
+    }
+    .radar td h3{
+      font-weight: 400;
+    }
   </style>
 </head>
 
@@ -49,22 +69,25 @@ overflow: hidden;
       <tr style="display:table; position: relative; margin-bottom: 7rem; right:10rem;">
         <td style="position: absolute; top: -1rem; left: 2rem; z-index: 1; background: none;"><img
              src="./images/parachute-vc.png" alt="balon"></td>
-        <td style="position: absolute; top: 2rem; left: 31rem; z-index: 1; background: none; "><img
-            src="./images/thy-logo.png" alt="logo"></td>
+        <td style="position: absolute; top: 2rem; left: 31rem; z-index: 1; background: none; "><a href="#"><img
+            src="./images/thy-logo.png" alt="logo"></a></td>
       </tr>
     </tbody>
     <tr style="display:flex; position: relative; right: 0rem;">
       <td style="position: relative; "><img src="./images/header-bg.png" alt="background-header"></td>
-      <td style="position: absolute; top: 4rem; left: 3.1rem; z-index: 100; background: none;"><img
-          src="./images/header-text.png" alt="background-text1"></td>
+      <td style="position: absolute; top: 5.5rem; left: 4rem; z-index: 100; background: none; line-height: 30px;"><h1 style="
+      font-size: 70px;
+      color: white;">WHAT IS NEW</h1><br><h3 style="
+      font-size: 25px;
+      color: white;">WITH TURKISH AIRLINES BLOG?</h3></td>
       <td style="position: absolute; top: 3.9rem; left: 28.5rem; z-index: 99; background: none;"><img
           src="./images/plane.png" alt="plane"></td>
       <td style="position: absolute; top: 0.5rem; left: 24.5rem; z-index: 98; background: none;"><img
           src="./images/plane-layer.png" alt="plane-layer"></td>
-      <td style="position: absolute; top: 11rem; left: 4.2rem; z-index: 98; background: none;"><img
+      <td style="position: absolute; top: 13rem; left: 5.2rem; z-index: 98; background: none;"><img
           src="./images/callender-sm.png" alt="callendar-sm"></td>
-      <td style="position: absolute; top: 10.7rem; left: 5.5rem; z-index: 101; background: none;"><img
-          src="./images/cl-text.png" alt="callendar-text"></td>
+      <td style="position: absolute; top: 13.3rem; left: 7.5rem; z-index: 101; background: none;"><h3
+        style="color: white; font-weight: 600; font-size: 23px;">SEPTEMBER 2021</h3></td>
     </tr>
   </table>
   <!-- MAIN TEXT -->
@@ -91,18 +114,18 @@ overflow: hidden;
       <tr>
         <td><img src="./images/rtgl.png" alt=""></td>
       </tr>
-      <tr style="display: flex; flex-direction: column; margin-left:3rem; margin-right: 3rem;">
-        <td style="margin-bottom: 1.5rem"><img src="./images/fashion.png" alt=""></td>
-        <td style="margin-bottom: 3.5rem"><img src="./images/fashion-text.png" alt=""></td>
-        <td style="margin-bottom: 1.5rem"><img src="./images/ebru.png" alt=""></td>
-        <td><img src="./images/ebru-text.png" alt=""></td>
+      <tr style="display: flex; flex-direction: column; margin-left:3rem; margin-right: 3rem; margin-top: 1rem;">
+        <td style="margin-bottom: 1rem"><img src="./images/fashion.png" alt=""></td>
+        <td style="margin-bottom: 3rem"><h3 style="font-size:18.5px; font-weight: normal;">A stylish reason to discover <br> Milano: Milano Fashion Week</h3></td>
+        <td style="margin-bottom: 1rem"><img src="./images/ebru.png" alt=""></td>
+        <td><h3 style="font-size:18.5px; font-weight: normal;">Cultural treasures of Turkey inscribed on the UNESCO <br> Intangible Cultural <br> Heritage List</h3></td>
 
       </tr>
-      <tr style="display: flex; flex-direction: column;">
-        <td style="margin-bottom: 1.5rem"><img src="./images/isparta.png" alt=""></td>
-        <td style="margin-bottom: 3.5rem"><img src="./images/isparta-text.png" alt=""></td>
-        <td style="margin-bottom: 1.5rem"><img src="./images/cami.png" alt=""></td>
-        <td><img src="./images/cami-text.png" alt=""></td>
+      <tr style="display: flex; flex-direction: column; margin-top: 1rem;">
+        <td style="margin-bottom: 1rem"><img src="./images/isparta.png" alt=""></td>
+        <td style="margin-bottom: 3rem"><h3 style="font-size:18.5px; font-weight: normal;">Turkey’s Slow Cities: <br> Havens of Tranquility</h3></td>
+        <td style="margin-bottom: 1rem"><img src="./images/cami.png" alt=""></td>
+        <td><h3 style="font-size:18.5px; font-weight: normal;">An architectural glance: Turkey’s modern mosques</h3></td>
       </tr>
     </tbody>
 
@@ -113,26 +136,26 @@ overflow: hidden;
 
   <!-- MOST LIKED -->
 
-  <table style="margin-top: 5rem;">
+  <table class="mostLiked" style="margin-top: 5rem;" >
     <tbody>
       <tr>
-        <td colspan="3"><img src="./images/most-like-header.png" alt=""></td>
-        <td rowspan="4" style="text-align: right;"><img src="./images/rtgl.png" alt=""></td>
+        <td style="line-height: 60px;" colspan="2"><h1 style="color: #c90119; font-size: 55px;">THE MOST LIKED <br> CONTENTS</h1><br><h3 style="margin-top:-4rem;color: #c90119; font-size: 23px; font-weight: 600;">BY THE TURKISH AIRLINES TEAM.</h3></td>
+        <td class="stick" rowspan="4" style="text-align: right; width: 30px; padding: 1rem;"><img  src="./images/rtgl.png" alt=""></td>
       </tr>
       <tr>
-        <td><img src="./images/flight-academy.png" alt=""></td>
-        <td style="padding-left:10rem"><img src="./images/flight-academy-text.png" alt=""><br><img
-            src="./images/discover.png" alt=""></td>
+        <td style=" padding-right:15rem;"><a href="#"><img src="./images/flight-academy.png" alt=""></a></td>
+        <td style="text-align:left; padding-bottom:4rem" ><a href="#"><h3 >Our captain pilot Oğuz Yeten explains: How to be a pilot?</h3><br><img
+            src="./images/discover.png" alt=""> </a></td>
       </tr>
       <tr>
-        <td><img src="./images/mardin.png" alt=""></td>
-        <td style="padding-left:10rem"><img src="./images/mardin-text.png" alt=""><br><img src="./images/discover.png"
-            alt=""></td>
+        <td style=" padding-right:15rem;"><a href="#"><img src="./images/mardin.png" alt=""></a></td>
+        <td style="text-align:left; padding-bottom:4rem"><a href="#"><h3>The city of tales: <br> Mardin</h3><br><img src="./images/discover.png"
+            alt=""></a></td>
       </tr>
       <tr>
-        <td><img src="./images/oguz-yeten.png" alt=""></td>
-        <td style="padding-left:10rem"><img src="./images/oguz-yeten-text.png" alt=""><br><img
-            src="./images/discover.png" alt=""></td>
+        <td style=" padding-right:15rem;"><a href="#"><img src="./images/oguz-yeten.png" alt=""></a></td>
+        <td style="text-align:left; padding-bottom:4rem"><a href="#"><h3>Cargo Talk with Turhan Özen, <br> Chief Cargo Officer</h3><br><img
+            src="./images/discover.png" alt=""></a></td>
       </tr>
     </tbody>
   </table>
@@ -143,44 +166,47 @@ overflow: hidden;
     <tbody>
       <tr>
         <td style="width: 1%;" rowspan="3" ><img src="./images/rtgl.png" alt=""></td>
-        <td style="text-align: center;" colspan="3" ><img src="./images/this-month.png" alt=""></td>
+        <td style="text-align: left; padding-left: 2rem; " colspan="3" ><h4 style="margin-top:5rem; color: #c90119; font-size: 25px;">THEME OF THE MONTH:</h4><br><h1 style="color: #c90119; font-size: 55px;">THE ARCHITECTURAL
+          STRUCTURES THAT
+          WILL CHANGE YOUR
+          TRAVEL ROUTE. </h1></td>
       </tr>
 
       <tr style=" text-align: center;">
-        <td><img src="./images/chateaus.png" alt=""></td>
-        <td><img src="./images/kyoto.png" alt=""></td>
-        <td><img src="./images/abbey.png" alt=""></td>
+        <td><img style="margin-top: 7rem;" src="./images/chateaus.png" alt=""></td>
+        <td><img style="margin-top: 7rem;" src="./images/kyoto.png" alt=""></td>
+        <td><img style="margin-top: 7rem;" src="./images/abbey.png" alt=""></td>
       </tr>
-      <tr style="margin-top:5rem;text-align: center;">
-        <td><img src="./images/chateaus-text.png" alt=""></td>
-        <td><img src="./images/kyoto-text.png" alt=""></td>
-        <td><img src="./images/abbey-text.png" alt=""></td>
+      <tr style="margin-top:1rem;text-align: center;">
+        <td style="padding: 30px;"><h4 style="text-align:left;font-weight: 400;">The most dazzling castles and chateaus in the world!</h4></td>
+        <td style="padding: 30px;"><h4 style="text-align:left; font-weight: 400; margin-bottom: 1rem;">Tokyo’s temples and temples in Kyoto</h4></td>
+        <td style="padding: 30px;"><h4 style="text-align:left;font-weight: 400;">The 7 most magnificent libraries in the world</h4></td>
       </tr>
     </tbody>
   </table>
   <!-- RADAR -->
-  <table style="margin-top: 5rem;">
+  <table class="radar" style="margin-top: 5rem;">
     <tbody>
       <tr>
-        <td colspan="3"><img src="./images/radar.png" alt=""></td>
-        <td rowspan="4" style="text-align: right;"><img src="./images/rtgl.png" alt=""></td>
+        <td colspan="2"><h1 style="font-size: 50px;;color: #c90119 ;">CAUGHT BY <br> OUR RADAR.</h1></td>
+        <td rowspan="4" style="text-align: right; width: 15px !important;"><img src="./images/rtgl.png" alt=""></td>
       </tr>
       <tr>
-        <td ><img src="./images/queen-text.png" alt=""><br><img
-          src="./images/discover.png" alt=""></td>
-        <td style="padding-left:10rem"><img src="./images/queen.png" alt=""></td>
+        <td style="padding-bottom:2.2rem" ><a href="#"><h3 style="line-break:none">The biblical queens played <br> crucial roles in the rise and fall <br> of ancient Israel</h3><br><img
+          src="./images/discover.png" alt=""></a></td>
+        <td><a href="#"><img src="./images/queen.png" alt=""></a></td>
        
       </tr>
       <tr>
-        <td ><img src="./images/persian-text.png" alt=""><br><img src="./images/discover.png"
-          alt=""></td>
-        <td style="padding-left:10rem"><img src="./images/persian.png" alt=""></td>
+        <td style="padding-bottom:3rem" ><a href="#"><h3 style="line-break:none">The ancient Persian way to <br> keep cool</h3><br><img src="./images/discover.png"
+          alt=""></a></td>
+        <td><a href="#"><img src="./images/persian.png" alt=""></a></td>
         
       </tr>
       <tr>
-        <td ><img src="./images/ai-text.png" alt=""><br><img
-          src="./images/discover.png" alt=""></td>
-        <td style="padding-left:10rem"><img src="./images/ai.png" alt=""></td>
+        <td  style="padding-bottom:3.6rem" ><a href="#"><h3 style="line-break:none; ">Will this creepy AI platform put <br>artists out of a job?</h3><br><img
+          src="./images/discover.png" alt=""></a></td>
+        <td><a href=""><img src="./images/ai.png" alt=""></a></td>
         
       </tr>
     </tbody>
@@ -190,28 +216,35 @@ overflow: hidden;
     <tbody>
       <tr>
         <td style="width: 1%;" rowspan="3" ><img src="./images/small-rcgl.png" alt=""></td>
-        <td style="text-align: left; padding-left: 3rem" colspan="3" ><img src="./images/advice.png" alt=""></td>
+        <td style="text-align: left; padding-left: 3rem" colspan="3" ><h1 style="color: #c90119; font-size:45px;">THE EDITOR'S <br>
+          ADVICE </h1><br>
+          <h3 style="margin-top: -1rem; color: #c90119;">#BingeWatchSeries</h3></td>
       </tr>
 
       <tr style=" text-align: center;">
-        <td><img src="./images/valeria.png" alt=""></td>
-        <td><img src="./images/chair.png" alt=""></td>
-        <td><img src="./images/honor.png" alt=""></td>
+        <td><a href="#"><img src="./images/valeria.png" alt=""></a></td>
+        <td><a href="#"><img src="./images/chair.png" alt=""></a></td>
+        <td><a href="#"><img src="./images/honor.png" alt=""></a></td>
       </tr>
       <tr style="margin-top:5rem;text-align: center;">
-        <td><img src="./images/valeria-text.png" alt=""></td>
-        <td><img src="./images/chair-text.png" alt=""></td>
-        <td><img src="./images/honor-text.png" alt=""></td>
+        <td><a href="#"><h3 style="text-align: left;margin-left:2rem;">Valeria</h3></a></td>
+        <td><a href="#"><h3 style="text-align: left;margin-left:1.8rem;">The Chair</h3></a></td>
+        <td><a href="#"><h3 style="text-align: left;margin-left:1.7rem;">Your Honor</h3></a></td>
       </tr>
     </tbody>
   </table>
 
   <!-- Footer -->
 
-  <table style="margin: 5rem 0 5rem 0">
+  <table style="margin: 5rem 0 5rem 0; background-color: #c7c7c7;">
+
     <tbody>
       <tr>
-        <td><img src="./images/footer.png" alt=""></td>
+        <td style="padding: 1rem; width: 80%;"><h3 style="margin-left:1rem; font-weight: 300;"> ©2021 Turkish Airlines</h3></td>
+        <td><a href="#"><img style="width: 20px; height: 20px;" src="./images/fb-ico.png" alt=""></a></td>
+        <td><a href="#"><img style="width: 20px; height: 20px;" src="./images/ig-ico.png" alt=""></a></td>
+        <td><a href="#"><img style="width: 20px; height: 20px;" src="./images/tw-ico.png" alt=""></a></td>
+        <td><a href="#"><img style="width: 20px; height: 20px;" src="./images/yt-ico.png" alt=""></a></td>
       </tr>
     </tbody>
   </table>
